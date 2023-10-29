@@ -937,12 +937,13 @@ AST_Variable *ast_get_variable_rec_access(AST_Variable *rec, char *field_id)
 	return new_variable;
 }
 
+
 AST_Variable *ast_get_variable_array_access(AST_Variable *variable, AST_Expressions *exprs)
 {
 	/* Ensure the variable is either an ID (which might be found in the sumbol table)
 	   or a record access (which can possibly be an array field) */
 	SEM_check_variable_type(variable, O_ID | O_REC_ACCESS);
-	
+
 	// If variable is an ID, try to find an array declaration
 	if (variable->type == V_ID) {
 		// if there is not an array declaration, it can only be a function call
@@ -1021,6 +1022,7 @@ AST_Variable *ast_get_variable_listfunc(AST_Listfunc *listfunc, AST_Expression *
 	
 	return new_variable;
 }
+
 
 /* Functions for creating expression nodes */
 

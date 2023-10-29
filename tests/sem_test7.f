@@ -1,8 +1,10 @@
+$ Program that uses a wrong paramater in a function call
+
 real x
 real a(2), b(2)
 character c
 
-x = t(a, b, c)
+x = 3 + t(a, b, c)
 
 end
 

@@ -1,3 +1,5 @@
+$ Program that uses an undeclared variable as array index
+
 real a(5,4,2)
 integer b
 

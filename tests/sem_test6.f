@@ -1,3 +1,5 @@
+$ Program that uses a non-integer expression as an array index
+
 real a(7, 5, 9)
 real x
 

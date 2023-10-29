@@ -1,4 +1,4 @@
-$ Program using an undeclared variab;e
+$ Program using an undeclared variable
 
 integer a
 data a/1/
